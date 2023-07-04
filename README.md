@@ -294,7 +294,12 @@ pip uninstall bitsandbytes
 pip install https://github.com/jllllll/bitsandbytes-windows-webui/raw/main/bitsandbytes-0.38.1-py3-none-any.whl
 ```
 
-When running windows on GPUs with bitsandbytes you should see something like:
+When running windows on GPUs with bitsandbytes and getting "RuntimeError: CUDA Setup failed despite GPU being available. Please run the following command to get more information: python -m bitsandbytes", what you need to install is actually bitsandbytes-windows: 
+```bash
+pip install bitsandbytes-windows
+```
+
+and then yes, you should see something like:
 ```bash
 (h2ogpt) c:\Users\pseud\h2ogpt>python generate.py --base_model=h2oai/h2ogpt-oig-oasst1-512-6_9b --load_8bit=True
 bin C:\Users\pseud\.conda\envs\h2ogpt\lib\site-packages\bitsandbytes\libbitsandbytes_cuda118.dll
