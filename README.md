@@ -326,7 +326,7 @@ python generate.py --base_model=gptj --cli=True
 ```
 and for LangChain, first install the necessary modules:
 ```bash
-pip install langchain posthog
+pip install langchain posthog sentence_transformers chromadb gpt4all
 ```
 and then run:
 ```bash
