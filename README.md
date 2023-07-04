@@ -274,7 +274,7 @@ Follow these steps, which includes the above GPU or CPU install step at one poin
    * mingw32-gcc-g++
 3. [Setup Environment](docs/INSTALL.md#install-python-environment) for Windows
 4. Run Miniconda shell (not power shell) as administrator
-5. Run: `set path=%path%;c:\MinGW\msys\1.0\bin\` to get C++ in path
+5. Run: `set path=%path%;c:\MinGW\msys\1.0\bin\` to get C++ in path (on my Windows 10: `set path=%path%;C:\MinGW\bin\`)
 6. Download latest nvidia driver for windows
 7. Confirm can run nvidia-smi and see driver version
 8. Install cuda toolkit from conda: `conda install cudatoolkit -c conda-forge` as required easily make bitsandbytes work
