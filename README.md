@@ -324,7 +324,11 @@ The CLI can be used instead of gradio by running for some base model, e.g.:
 ```bash
 python generate.py --base_model=gptj --cli=True
 ```
-and for LangChain run:
+and for LangChain, first install the necessary modules:
+```bash
+pip install langchain posthog
+```
+and then run:
 ```bash
 python make_db.py --user_path=user_path --collection_name=UserData
 python generate.py --base_model=gptj --cli=True --langchain_mode=UserData
