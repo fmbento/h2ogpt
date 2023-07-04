@@ -328,6 +328,10 @@ and for LangChain, first install the necessary modules:
 ```bash
 pip install langchain posthog sentence_transformers chromadb gpt4all
 ```
+and for webpages parsing:
+```bash
+pip install unstructured
+```
 and then run:
 ```bash
 python make_db.py --user_path=user_path --collection_name=UserData
